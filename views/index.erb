@@ -1,4 +1,10 @@
-<h1>Welcome
-<%= @name %>
-</h1>
-<p>This is my first sinatra app</p>
+<h1>Talk to your grandma!</h1>
+<form action="/" method="post">
+  <input type="text" name="user_input">
+  <input type="submit">
+</form>
+<p> 
+	 <%= @input %> 
+</p>
+<h1><%= @reply %></h1>
+<p><%=@bye_times %></p>

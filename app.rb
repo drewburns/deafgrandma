@@ -7,9 +7,8 @@ ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'sqlite3:test1.db
 get '/' do
 	erb :index
 end
-
-post '/' do
-	@bye_times = 0
+@bye_times = 0
+post(@bye_times) '/' do
 	@input = params[:user_input]
 	if @input == "BYE"
 		@reply = "No Stay!"

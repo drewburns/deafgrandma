@@ -17,5 +17,6 @@ post '/' do
 	else
 		@reply = "HUH?! SPEAK UP, SONNY!"
 	end	
-	erb :index
 end
+
+

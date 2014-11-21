@@ -1,11 +1,11 @@
 $(document).ready(function() {
-	$( "#sumbit_button" ).submit(function() {
-		var str = $("form").serialize();
+	$( "form#user_input" ).on("submit", (function(event) {
+           event.preventDefault();  
 		$.ajax({
-		  type: "POST",
-		  url: '/',
-		  data: str,
-		  success: success,
-		});
+			type: "POST"
+            url: "/test",
+            data: $(this).serialize(),
+            dataType: "html",
+        });
 	});
 });

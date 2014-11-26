@@ -1,6 +1,13 @@
 html {
 	margin-left: 100px;
+	background-image: url("../pattern.png");
 }
 p#user {
 	font-style: italic;
+}
+h1 {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+#main {
+	margin-left: 30%;
 }
